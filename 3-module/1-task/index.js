@@ -1,3 +1,6 @@
 function namify(users) {
-  // ваш код...
+  return users.reduce((acc, next) => {
+    acc.push(next.name);
+    return acc;
+  }, []);
 }
